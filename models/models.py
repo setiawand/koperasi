@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class Anggota(models.Model):
+class JenisSimpanan(models.Model):
     _inherit = 'res.partner'
 
     kode_anggota = fields.Char(string='Kode Anggota', required=True)
