@@ -59,14 +59,14 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Anggota" id="koperasi.anggota" parent="koperasi.menu_root"/>
+    <menuitem name="Transaksi" id="koperasi.transSimpanan" parent="koperasi.menu_root"/>
 
     <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
 
     <!-- actions -->
 
 
-    <menuitem name="List" id="koperasi.anggota_list" parent="koperasi.anggota"
+    <menuitem name="Transaksi simpanan" id="koperasi.transSimpanan_list" parent="koperasi.tranSimpanan"
               action="koperasi.action_window"/>
 <!--
     <menuitem name="Server to list" id="koperasi" parent="koperasi.menu_2"

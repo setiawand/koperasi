@@ -26,6 +26,11 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+<<<<<<< Updated upstream
+=======
+        'views/views_jenissimpanan.xml',
+        'views/views_transaksi_simpanan.xml',
+>>>>>>> Stashed changes
     ],
     # only loaded in demonstration mode
     'demo': [
