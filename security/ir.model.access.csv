@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pinjaman,pinjaman,model_pinjaman,base.group_user,1,1,1,1
+access_jenis_simpanan,access_jenis_simpanan,model_simpanan,base.group_user,1,1,1,1
 access_transaksi_simpanan,access_transaksi_simpanan,model_transaksi_simpanan,,1,1,1,1
