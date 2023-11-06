@@ -31,7 +31,6 @@
     <!-- menu categories -->
 
     <menuitem name="Anggota" id="koperasi.anggota" parent="koperasi.menu_root"/>
-   <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
 
     <!-- actions -->
     <menuitem name="List Anggota" id="koperasi.anggota_list" parent="koperasi.anggota"
