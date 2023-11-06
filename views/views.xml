@@ -1,0 +1,75 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+  <record id="koperasi.list" model="ir.ui.view">
+    <field name="name">koperasi list</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_tree" />
+    <field name="arch" type="xml">
+      <field name="display_name" position="before">
+        <field name="kode_anggota"/>
+      </field>
+      <field name="display_name" position="after">
+        <field name="is_anggota"/>
+      </field>
+    </field>
+  </record>
+
+  <record id="res_partner_search_inherit" model="ir.ui.view">
+      <field name="name">koperasi anggota search</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_res_partner_filter"/>
+      <field name="arch" type="xml">
+          <field name="parent_id" position="after">
+              <filter string="Anggota" name="anggota" domain="[('is_anggota', '=', True)]"/>
+          </field>
+      </field>
+  </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="koperasi.action_window">
+      <field name="name">Data Anggota</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_mode">kanban,tree,form</field>
+      <field name="context">{'search_default_anggota': 1}</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="koperasi.action_server">
+      <field name="name">koperasi server</field>
+      <field name="model_id" ref="model_koperasi_koperasi"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Koperasi" id="koperasi.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Anggota" id="koperasi.anggota" parent="koperasi.menu_root"/>
+    <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
+
+    <!-- actions -->
+
+
+    <menuitem name="List" id="koperasi.anggota_list" parent="koperasi.anggota"
+              action="koperasi.action_window"/>
+<!--
+    <menuitem name="Server to list" id="koperasi" parent="koperasi.menu_2"
+              action="koperasi.action_server"/>
+-->
+  </data>
+</odoo>
