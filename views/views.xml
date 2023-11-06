@@ -1,39 +1,41 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
-  <record id="koperasi.list" model="ir.ui.view">
-    <field name="name">koperasi list</field>
-    <field name="model">res.partner</field>
-    <field name="inherit_id" ref="base.view_partner_tree" />
-    <field name="arch" type="xml">
-      <field name="display_name" position="before">
-        <field name="kode_anggota"/>
-      </field>
-      <field name="display_name" position="after">
-        <field name="is_anggota"/>
-      </field>
-    </field>
-  </record>
-
-  <record id="res_partner_search_inherit" model="ir.ui.view">
-      <field name="name">koperasi anggota search</field>
-      <field name="model">res.partner</field>
-      <field name="inherit_id" ref="base.view_res_partner_filter"/>
+    <record model="ir.ui.view" id="koperasi.list">     
+      <field name="name">koperasi list</field>
+      <field name="model">anggota</field>
       <field name="arch" type="xml">
-          <field name="parent_id" position="after">
-              <filter string="Anggota" name="anggota" domain="[('is_anggota', '=', True)]"/>
-          </field>
+        <tree>
+          <field name="kode_anggota"/>
+          <field name="nik"/>
+          <field name="nama"/>
+          <field name="jenis_kelamin"/>
+          <field name="no_telp"/>
+          <field name="tanggal_masuk"/>
+          <field name="status_anggota"/>
+        </tree>
       </field>
-  </record>
+    </record>
+
+<!--
+    <record model="ir.ui.view" id="koperasi.list">
+      <field name="name">koperasi list</field>
+      <field name="model">koperasi.koperasi</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
 
     <!-- actions opening views on models -->
-
     <record model="ir.actions.act_window" id="koperasi.action_window">
       <field name="name">Data Anggota</field>
-      <field name="res_model">res.partner</field>
-      <field name="view_mode">kanban,tree,form</field>
-      <field name="context">{'search_default_anggota': 1}</field>
+      <field name="res_model">anggota</field>
+      <field name="view_mode">tree,form</field>
     </record>
 
 

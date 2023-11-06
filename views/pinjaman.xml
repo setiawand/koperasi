@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="koperasi.list">     
+      <field name="name">koperasi list</field>
+      <field name="model">pinjaman</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="kode_pinjaman"/>
+          <field name="nama_pinjaman"/>
+          <field name="keterangan"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="koperasi.action_window">
+      <field name="name">Jenis Pinjaman</field>
+      <field name="res_model">pinjaman</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+
+    <menuitem name="Koperasi" id="koperasi.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Pinjaman" id="koperasi.pinjaman" parent="koperasi.menu_root"/>
+    <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
+
+    <!-- actions -->
+    <menuitem name="Jenis Pinjaman" id="koperasi.jenis_pinjaman" parent="koperasi.pinjaman"
+              action="koperasi.action_window"/>
+<!--
+    <menuitem name="List" id="koperasi.menu_1_list" parent="koperasi.menu_1"
+              action="koperasi.action_window"/>
+    <menuitem name="Server to list" id="koperasi" parent="koperasi.menu_2"
+              action="koperasi.action_server"/>
+-->
+  </data>
+</odoo>
