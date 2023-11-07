@@ -3,7 +3,7 @@
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="koperasi.list">     
       <field name="name">koperasi list</field>
-      <field name="model">res.partner</field>
+      <field name="model">anggota</field>
       <field name="arch" type="xml">
         <tree>
           <field name="kode_anggota"/>
@@ -16,23 +16,11 @@
         </tree>
       </field>
     </record>
-<!--
-    <record model="ir.ui.view" id="koperasi.list">
-      <field name="name">koperasi list</field>
-      <field name="model">koperasi.koperasi</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
--->
+
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="koperasi.action_window">
       <field name="name">Data Anggota</field>
-      <field name="res_model">res.partner</field>
+      <field name="res_model">anggota</field>
       <field name="view_mode">tree,form</field>
     </record>
 
