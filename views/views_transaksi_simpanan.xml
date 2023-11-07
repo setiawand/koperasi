@@ -1,33 +1,32 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
-  <record id="koperasi.list" model="ir.ui.view">
-    <field name="name">koperasi list</field>
-    <field name="model">transaksi.simpanan</field>
-    <field name="arch" type="xml">
-      <tree>
-      </tree>
-    </field>
-  </record>
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="koperasi.action_server">
-      <field name="name">koperasi server</field>
-      <field name="model_id" ref="model_koperasi_koperasi"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
+    <record model="ir.ui.view" id="transaksi_simpanan">     
+      <field name="name">Transaksi Simpanan</field>
+      <field name="model">transaksi.simpanan</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="kode_anggota"/>
+          <field name="tanggal_transaksi"/>
+          <field name="kode_simpanan"/>
+          <field name="nominal"/>
+           <field name="bukti_transfer"/>
+            <field name="saldo"/>
+        </tree>
       </field>
     </record>
--->
 
-    <menuitem name="Transaksi simpanan" id="koperasi.transSimpanan_list" parent="koperasi.simpanan"
-              action="koperasi.action_window"/>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="transaksisimpanan_action_window">
+      <field name="name">Transaksi Simpanan</field>
+      <field name="res_model">transaksi.simpanan</field>
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem name="Simpanan" id="koperasi.simpanan" parent="koperasi.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Transaksi Simpanan" id="koperasi.transaksisimpanan_list" parent="koperasi.simpanan"
+              action="transaksisimpanan_action_window"/>
   </data>
 </odoo>
