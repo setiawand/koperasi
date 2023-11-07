@@ -9,5 +9,5 @@ class Pinjaman(models.Model):
      #_inherit = 'res.partner'
 
      kode_pinjaman = fields.Char(string='Kode Pinjaman', required=True)
-     nama_pinjaman = fields.Char(string='Nama Jenis Pinjaman', required=True)
-     keterangan = fields.Text(string='Alamat')
+     nama_pinjaman = fields.Char(string='Nama Pinjaman', required=True)
+     keterangan = fields.Text(string='Keterangan')

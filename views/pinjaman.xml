@@ -13,29 +13,12 @@
       </field>
     </record>
 
-    <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="pinjaman.action_window">
-      <field name="name">Jenis Pinjaman</field>
-      <field name="res_model">pinjaman</field>
-      <field name="view_mode">tree,form</field>
-    </record>
 
     <menuitem name="Pinjaman" id="koperasi.pinjaman" parent="koperasi.menu_root"/>
     <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
 
     <!-- actions -->
     <menuitem name="Jenis Pinjaman" id="koperasi.jenis_pinjaman" parent="koperasi.pinjaman"
-<<<<<<< HEAD
               action="koperasi.action_window"/>
-<!--
-    <menuitem name="List" id="koperasi.menu_1_list" parent="koperasi.menu_1"
-              action="koperasi.action_window"/>
-    <menuitem name="Server to list" id="koperasi" parent="koperasi.menu_2"
-              action="koperasi.action_server"/>
--->
-=======
-              action="pinjaman.action_window"/>
-
->>>>>>> 817e669dd89c6c95575ad2cab1f26c7bb8bb22a7
   </data>
 </odoo>
