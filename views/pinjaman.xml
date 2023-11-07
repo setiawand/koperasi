@@ -25,6 +25,5 @@
     <!-- actions -->
     <menuitem name="Jenis Pinjaman" id="koperasi.jenis_pinjaman" parent="pinjaman_menu"
               action="pinjaman_action_window"/>
-
   </data>
 </odoo>

@@ -28,8 +28,7 @@
         'views/templates.xml',
         'views/views_jenissimpanan.xml',
         'views/views_transaksi_simpanan.xml',
-        'views/pinjaman.xml',
-        'views/views_jenissimpanan.xml',
+        'views/pinjaman.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

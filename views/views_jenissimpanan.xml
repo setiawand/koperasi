@@ -23,14 +23,9 @@
       
     </record>
 
-    <!-- Top menu item -->
-
-    <!-- <menuitem name="Koperasi" id="koperasi.menu_root"/> -->
-
     <!-- menu categories -->
 
     <menuitem name="Simpanan" id="koperasi.simpanan" parent="koperasi.menu_root"/>
-    <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
 
     <!-- actions -->
 
