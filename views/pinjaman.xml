@@ -1,8 +1,8 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <record model="ir.ui.view" id="koperasi.list">     
-      <field name="name">koperasi list</field>
+    <record model="ir.ui.view" id="pinjaman_list">     
+      <field name="name">pinjaman list</field>
       <field name="model">pinjaman</field>
       <field name="arch" type="xml">
         <tree>
@@ -13,12 +13,17 @@
       </field>
     </record>
 
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="pinjaman_action_window">
+      <field name="name">Jenis Pinjaman</field>
+      <field name="res_model">pinjaman</field>
+      <field name="view_mode">tree,form</field>
+    </record>
 
-    <menuitem name="Pinjaman" id="koperasi.pinjaman" parent="koperasi.menu_root"/>
-    <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
+    <menuitem name="Pinjaman" id="pinjaman_menu" parent="koperasi.menu_root"/>
 
     <!-- actions -->
-    <menuitem name="Jenis Pinjaman" id="koperasi.jenis_pinjaman" parent="koperasi.pinjaman"
-              action="koperasi.action_window"/>
+    <menuitem name="Jenis Pinjaman" id="koperasi.jenis_pinjaman" parent="pinjaman_menu"
+              action="pinjaman_action_window"/>
   </data>
 </odoo>
