@@ -16,7 +16,6 @@
         </tree>
       </field>
     </record>
-
 <!--
     <record model="ir.ui.view" id="koperasi.list">
       <field name="name">koperasi list</field>
@@ -30,30 +29,12 @@
       </field>
     </record>
 -->
-
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="koperasi.action_window">
       <field name="name">Data Anggota</field>
       <field name="res_model">anggota</field>
       <field name="view_mode">tree,form</field>
     </record>
-
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="koperasi.action_server">
-      <field name="name">koperasi server</field>
-      <field name="model_id" ref="model_koperasi_koperasi"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
 
     <!-- Top menu item -->
 
@@ -62,16 +43,11 @@
     <!-- menu categories -->
 
     <menuitem name="Anggota" id="koperasi.anggota" parent="koperasi.menu_root"/>
-    <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
+   <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
 
     <!-- actions -->
-
-
-    <menuitem name="List" id="koperasi.anggota_list" parent="koperasi.anggota"
+    <menuitem name="List Anggota" id="koperasi.anggota_list" parent="koperasi.anggota"
               action="koperasi.action_window"/>
-<!--
-    <menuitem name="Server to list" id="koperasi" parent="koperasi.menu_2"
-              action="koperasi.action_server"/>
--->
+
   </data>
 </odoo>
