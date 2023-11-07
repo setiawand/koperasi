@@ -4,9 +4,7 @@ from odoo import models, fields, api
 
 
 class Anggota(models.Model):
-     _name = 'anggota'
-     _description = 'tbl_anggota'
-     #_inherit = 'res.partner'
+    _inherit = 'res.partner'
 
     kode_anggota = fields.Char(string='Kode Anggota', required=True)
     nama = fields.Char(string='Nama Anggota', required=True)
