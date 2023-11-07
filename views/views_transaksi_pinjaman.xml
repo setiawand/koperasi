@@ -27,7 +27,7 @@
     </record>
 -->
 
-    <menuitem name="Transaksi pinjaman" id="koperasi.transPinjaman_list" parent="koperasi.pinjaman"
+    <menuitem name="Transaksi pinjaman" id="koperasi.transPinjaman_list" parent="koperasi.jenis_pinjaman"
               action="koperasi.action_window"/>
   </data>
 </odoo>
