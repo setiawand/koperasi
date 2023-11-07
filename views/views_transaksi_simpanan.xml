@@ -53,24 +53,7 @@
     </record>
 -->
 
-    <!-- Top menu item -->
-
-    <menuitem name="Koperasi" id="koperasi.menu_root"/>
-
-    <!-- menu categories -->
-
-    <menuitem name="Transaksi" id="koperasi.transSimpanan" parent="koperasi.menu_root"/>
-
-    <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
-
-    <!-- actions -->
-
-
-    <menuitem name="Transaksi simpanan" id="koperasi.transSimpanan_list" parent="koperasi.tranSimpanan"
+    <menuitem name="Transaksi simpanan" id="koperasi.transSimpanan_list" parent="koperasi.simpanan"
               action="koperasi.action_window"/>
-<!--
-    <menuitem name="Server to list" id="koperasi" parent="koperasi.menu_2"
-              action="koperasi.action_server"/>
--->
   </data>
 </odoo>

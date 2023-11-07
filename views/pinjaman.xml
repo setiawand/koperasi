@@ -14,23 +14,17 @@
     </record>
 
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="koperasi.action_window">
+    <record model="ir.actions.act_window" id="pinjaman.action_window">
       <field name="name">Jenis Pinjaman</field>
       <field name="res_model">pinjaman</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Top menu item -->
-
-    <menuitem name="Koperasi" id="koperasi.menu_root"/>
-
-    <!-- menu categories -->
-
     <menuitem name="Pinjaman" id="koperasi.pinjaman" parent="koperasi.menu_root"/>
 
     <!-- actions -->
     <menuitem name="Jenis Pinjaman" id="koperasi.jenis_pinjaman" parent="koperasi.pinjaman"
-              action="koperasi.action_window"/>
+              action="pinjaman.action_window"/>
 
   </data>
 </odoo>
