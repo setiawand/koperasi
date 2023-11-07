@@ -3,7 +3,7 @@
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="koperasi.list">     
       <field name="name">koperasi list</field>
-      <field name="model">anggota</field>
+      <field name="model">res.partner</field>
       <field name="arch" type="xml">
         <tree>
           <field name="kode_anggota"/>
@@ -32,7 +32,7 @@
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="koperasi.action_window">
       <field name="name">Data Anggota</field>
-      <field name="res_model">anggota</field>
+      <field name="res_model">res.partner</field>
       <field name="view_mode">tree,form</field>
     </record>
 
@@ -43,7 +43,6 @@
     <!-- menu categories -->
 
     <menuitem name="Anggota" id="koperasi.anggota" parent="koperasi.menu_root"/>
-   <!-- <menuitem name="Menu 2" id="koperasi.menu_2" parent="koperasi.menu_root"/> -->
 
     <!-- actions -->
     <menuitem name="List Anggota" id="koperasi.anggota_list" parent="koperasi.anggota"
