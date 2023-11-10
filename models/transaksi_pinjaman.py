@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 
-class Transaksi_simpanan(models.Model):
+class Transaksi_pinjaman(models.Model):
     _name = 'transaksi.pinjaman'
     _description = 'tabel transaksi pinjaman'
 

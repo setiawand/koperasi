@@ -2,7 +2,7 @@
   <data>
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="transaksi_pinjaman">     
-      <field name="name">Jenis Pinjaman</field>
+      <field name="name">Transaksi Pinjaman</field>
       <field name="model">transaksi.pinjaman</field>
       <field name="arch" type="xml">
         <tree>
