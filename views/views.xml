@@ -6,7 +6,12 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <field name="vat" position="after">
+                <field name="kode_anggota"/>
                 <field name="is_anggota"/>
+                <field name="nik"/>
+                <field name="jenis_kelamin"/>
+                <field name="tanggal_masuk"/>
+                <field name="status_anggota"/>
             </field>
         </field>
     </record>
