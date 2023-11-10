@@ -6,7 +6,7 @@
       <field name="model">transaksi.pinjaman</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="kode_anggota"/>
+          <field name="anggota_id"/>
           <field name="tanggal_transaksi"/>
           <field name="kode_pinjaman"/>
           <field name="nominal"/>
