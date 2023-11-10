@@ -7,7 +7,7 @@ class Anggota(models.Model):
     _inherit = 'res.partner'
 
     kode_anggota = fields.Char(string='Kode Anggota', required=True)
-    nama = fields.Char(string='Nama Anggota', required=True)
+    nik = fields.Char(string='NIK', required=True)
     tanggal_lahir = fields.Date(string='Tanggal Lahir', required=True)
     tempat_lahir = fields.Char(string='Tempat Lahir', required=True)
     jenis_kelamin = fields.Selection(
@@ -15,10 +15,7 @@ class Anggota(models.Model):
             ("pria", "Pria"),
             ("wanita", "Perempuan"),
         ],string='Jenis Kelamin', required=True)
-    alamat = fields.Text(string='Alamat')
     pekerjaan = fields.Char(string='Pekerjaan')
-    no_telp = fields.Char(string='No Telepon')
-    nik = fields.Char(string='NIK', required=True)
     jml_tanggungan = fields.Integer(string='Jumlah Tanggungan')
     tanggal_masuk = fields.Date(string='Tanggal Masuk')
     status_anggota = fields.Selection(
