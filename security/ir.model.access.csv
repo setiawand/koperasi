@@ -3,3 +3,4 @@ access_pinjaman,pinjaman,model_pinjaman,base.group_user,1,1,1,1
 access_jenis_simpanan,access_jenis_simpanan,model_simpanan,base.group_user,1,1,1,1
 access_transaksi_simpanan,access_transaksi_simpanan,model_transaksi_simpanan,,1,1,1,1
 access_transaksi_pinjaman,access_transaksi_pinjaman,model_transaksi_pinjaman,,1,1,1,1
+access_anggota_report,access_anggota_report,model_anggota_report,base.group_user,1,1,1,1

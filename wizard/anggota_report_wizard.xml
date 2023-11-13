@@ -24,7 +24,7 @@
     </record>
 
     <record id="action_anggota_report_wizard" model="ir.actions.act_window">
-        <field name="name">Anggota Report</field>
+        <field name="name">Anggota</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">anggota.report</field>
         <field name="view_mode">form</field>
@@ -32,7 +32,10 @@
         <field name="target">new</field>
     </record>
 
+    <menuitem name="Laporan" id="laporan_koperasi" parent="koperasi.menu_root"/>
+
     <menuitem id="menu_anggota_report_wizard"
-            parent="koperasi.menu_root"
+            parent="laporan_koperasi"
             action="action_anggota_report_wizard"/>
+
 </odoo>
