@@ -29,7 +29,10 @@
         'views/views_jenissimpanan.xml',
         'views/views_transaksi_simpanan.xml',
         'views/pinjaman.xml',
-        'views/views_transaksi_pinjaman.xml'
+        'views/views_transaksi_pinjaman.xml',
+        'wizard/anggota_report_wizard.xml',
+        'reports/anggota_report_view.xml',
+        'reports/anggota_reports.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

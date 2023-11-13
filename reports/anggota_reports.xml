@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="action_report_anggota"
+                string="By Salesperson"
+                model="anggota.report"
+                report_type="qweb-pdf"
+                file="koperasi.anggota_report_view"
+                name="koperasi.anggota_report_view"
+        />
+    </data>
+</odoo>

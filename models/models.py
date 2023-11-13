@@ -6,7 +6,7 @@ from odoo import models, fields, api
 class Anggota(models.Model):
     _inherit = 'res.partner'
 
-    kode_anggota = fields.Char(string='Kode Anggota', required=True, readonly=True)
+    kode_anggota = fields.Char(string='Kode Anggota', required=False, readonly=True)
     nik = fields.Char(string='NIK', required=True)
     tanggal_lahir = fields.Date(string='Tanggal Lahir', required=True)
     tempat_lahir = fields.Char(string='Tempat Lahir', required=True)
