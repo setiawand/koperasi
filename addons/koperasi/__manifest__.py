@@ -3,7 +3,7 @@
     'name': "koperasi",
 
     'summary': """
-        Aplikasi manajemen Koperasi Perubahan""",
+        Aplikasi Manajemen Koperasi KPI""",
 
     'description': """
         Aplikasi ini cocok digunakan oleh lembaga Koperasi dengan skala kecil, menengah dan besar
@@ -23,16 +23,17 @@
 
     # always loaded
     'data': [
+        'data/sequence.xml',
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-        'views/views_jenissimpanan.xml',
-        'views/views_transaksi_simpanan.xml',
-        'views/pinjaman.xml',
-        'views/views_transaksi_pinjaman.xml',
-        'wizard/anggota_report_wizard.xml',
-        'reports/anggota_report_view.xml',
-        'reports/anggota_reports.xml'
+        'views/views.xml'
+        # 'views/templates.xml',
+        # 'views/views_jenissimpanan.xml',
+        # 'views/views_transaksi_simpanan.xml',
+        # 'views/pinjaman.xml',
+        # 'views/views_transaksi_pinjaman.xml',
+        # 'wizard/anggota_report_wizard.xml',
+        # 'reports/anggota_report_view.xml',
+        # 'reports/anggota_reports.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
@@ -41,4 +42,5 @@
     'maintainer': 'Sekolahan Indonesia Digital',
     'installable': True,
     'application': True,
+    'license': 'LGPL-3'
 }
