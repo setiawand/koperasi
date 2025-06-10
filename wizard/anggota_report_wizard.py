@@ -10,6 +10,8 @@ class AnggotaReport(models.TransientModel):
 
     start_date = fields.Datetime(string="Start Date", required=True)
     end_date = fields.Datetime(string="End Date", required=True)
+    salesperson_ids = fields.Many2many(
+        'res.users', string='Salesperson', help='Salesperson to include in the report')
 
     def print_report(self):
         sales_order = self.env['sale.order'].sudo().search([])
