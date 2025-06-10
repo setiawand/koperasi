@@ -7,14 +7,17 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="Report Anggota">
-                <group>
-                    <group>
-                        <field name="start_date"/>
-                    </group>
-                    <group>
-                        <field name="end_date"/>
-                    </group>
-                </group>
+                 <group>
+                     <group>
+                         <field name="start_date"/>
+                     </group>
+                     <group>
+                         <field name="end_date"/>
+                     </group>
+                     <group>
+                         <field name="salesperson_ids" widget="many2many_tags"/>
+                     </group>
+                 </group>
                 <footer>
                     <button name="print_report" string="Print" type="object" class="oe_highlight"/>
                     <button string="Cancel" special="cancel"/>
